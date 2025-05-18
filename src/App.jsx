@@ -4,7 +4,7 @@ import ResultsSection from './components/ResultsSection';
 
 export default function App() {
   return (
-    <div className='app'>
+    <div className='calculator'>
       <InputSection />
       <ResultsSection />
     </div>
