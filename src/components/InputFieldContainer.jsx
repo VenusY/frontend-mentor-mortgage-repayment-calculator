@@ -1,7 +1,7 @@
-export default function InputFieldContainer() {
+export default function InputFieldContainer({ unit, id }) {
   return (
     <div className='input-field-container'>
-      <div className='input-field-container__units-container'></div>
+      <div className='input-field-container__units-container'>{unit}</div>
       <input
         type='text'
         id={id}
