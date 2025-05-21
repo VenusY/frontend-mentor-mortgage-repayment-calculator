@@ -10,7 +10,7 @@ export default function InputFieldContainer({ unit, id, reversed }) {
         id={id}
         className='input-field-container__input-field'
       />
-      <div className='input-field-container__units-container'>{unit}</div>
+      <p className='input-field-container__units-container'>{unit}</p>
     </div>
   );
 }
