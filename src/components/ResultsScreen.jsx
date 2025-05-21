@@ -11,17 +11,17 @@ export default function ResultsScreen({ monthlyRepayments, total }) {
       </header>
 
       <main className='results-screen__main-section'>
-        <section className='monthly-repayments'>
-          <h3 className='monthly-repayments__heading'>
-            Your monthly repayments
-          </h3>
-          <p className='monthly-repayments__result'>{monthlyRepayments}</p>
-        </section>
+        <ResultContainer
+          category='monthly-repayments'
+          heading='Your monthly repayments'
+          result={monthlyRepayments}
+        />
 
-        <section className='total'>
-          <h3 className='total__heading'>Total you'll repay over the term</h3>
-          <p className='total__result'>{total}</p>
-        </section>
+        <ResultContainer
+          category='total'
+          heading={`Total you'll repay over the term`}
+          result={total}
+        />
       </main>
     </section>
   );
