@@ -5,12 +5,12 @@ export default function InputFieldContainer({ unit, id, reversed }) {
         reversed ? 'input-field-container--reversed' : ''
       }`}
     >
-      <div className='input-field-container__units-container'>{unit}</div>
       <input
         type='text'
         id={id}
         className='input-field-container__input-field'
       />
+      <div className='input-field-container__units-container'>{unit}</div>
     </div>
   );
 }
