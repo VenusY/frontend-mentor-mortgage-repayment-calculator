@@ -1,3 +1,5 @@
+import InputFieldContainer from './InputFieldContainer';
+
 export default function InputSection() {
   return (
     <section className='input-section'>
@@ -10,14 +12,7 @@ export default function InputSection() {
         Mortgage Amount
       </label>
 
-      <div className='input-section__input-field-container'>
-        <div className='input-section__units-container'></div>
-        <input
-          type='text'
-          id='mortgage-amount'
-          className='input-section__input-field'
-        />
-      </div>
+      <InputFieldContainer unit='£' id='mortgage-amount' reversed={true} />
 
       <div>
         <div className='input-section__label-input-container'>
@@ -25,14 +20,11 @@ export default function InputSection() {
             Mortgage Term
           </label>
 
-          <div className='input-section__input-field-container'>
-            <div className='input-section__units-container'></div>
-            <input
-              type='text'
-              id='mortgage-term'
-              className='input-section__input-field'
-            />
-          </div>
+          <InputFieldContainer
+            unit='years'
+            id='mortgage-term'
+            reversed={false}
+          />
         </div>
 
         <div className='input-section__label-input-container'>
@@ -40,14 +32,7 @@ export default function InputSection() {
             Interest Rate
           </label>
 
-          <div className='input-section__input-field-container'>
-            <div className='input-section__units-container'></div>
-            <input
-              type='text'
-              id='interest-rate'
-              className='input-section__input-field'
-            />
-          </div>
+          <InputFieldContainer unit='%' id='interest-rate' reversed={false} />
         </div>
       </div>
 
