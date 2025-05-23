@@ -12,6 +12,18 @@ export default function App() {
   const [total, setTotal] = useState(null);
   const [displayResults, setDisplysResults] = useState(false);
 
+  function updateMortgageAmount(e) {
+    setMortgageAmount(e.currentTarget.value);
+  }
+
+  function updateMortgageTerm(e) {
+    setMortgageTerm(e.currentTarget.value);
+  }
+
+  function updateInterestRate(e) {
+    setInterestRate(e.currentTarget.value);
+  }
+
   return (
     <div className='calculator'>
       <InputSection />
