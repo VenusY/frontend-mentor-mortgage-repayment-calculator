@@ -1,18 +1,13 @@
-import RadioButton from './RadioButton';
 import MortgageAmount from './MortgageAmount';
 import MortgageTermAndInterestRate from './MortgageTermAndInterestRate';
+import MortgageType from './MortgageType';
 
 export default function Form() {
   return (
     <form className='form'>
       <MortgageAmount />
       <MortgageTermAndInterestRate />
-
-      <label htmlFor='mortgage-type' className='input-section__label'>
-        Mortgage Type
-      </label>
-      <RadioButton label='Repayment' value='repayment' />
-      <RadioButton label='Interest Only' value='interest-only' />
+      <MortgageType />
 
       <button type='button' className='calculate-button'>
         <img
