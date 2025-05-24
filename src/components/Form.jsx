@@ -1,13 +1,11 @@
 import InputFieldContainer from './InputFieldContainer';
 import RadioButton from './RadioButton';
+import MortgageAmount from './MortgageAmount';
 
 export default function Form() {
   return (
     <form className='form'>
-      <label htmlFor='mortgage-amount' className='input-section__label'>
-        Mortgage Amount
-      </label>
-      <InputFieldContainer unit='£' id='mortgage-amount' reversed={true} />
+      <MortgageAmount />
 
       <div>
         <div className='input-section__label-input-container'>
