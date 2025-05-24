@@ -12,7 +12,6 @@ export default function InputSection() {
       <label htmlFor='mortgage-amount' className='input-section__label'>
         Mortgage Amount
       </label>
-
       <InputFieldContainer unit='£' id='mortgage-amount' reversed={true} />
 
       <div>
@@ -20,7 +19,6 @@ export default function InputSection() {
           <label htmlFor='mortgage-term' className='input-section__label'>
             Mortgage Term
           </label>
-
           <InputFieldContainer
             unit='years'
             id='mortgage-term'
@@ -32,7 +30,6 @@ export default function InputSection() {
           <label htmlFor='interest-rate' className='input-section__label'>
             Interest Rate
           </label>
-
           <InputFieldContainer unit='%' id='interest-rate' reversed={false} />
         </div>
       </div>
@@ -40,7 +37,6 @@ export default function InputSection() {
       <label htmlFor='mortgage-type' className='input-section__label'>
         Mortgage Type
       </label>
-
       <RadioButton label='Repayment' value='repayment' />
       <RadioButton label='Interest Only' value='interest-only' />
 
