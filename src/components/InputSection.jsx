@@ -40,19 +40,31 @@ export default function InputSection() {
         Mortgage Type
       </label>
 
-      <input
-        type='radio'
-        name='mortgage-type'
-        value='Repayment'
-        className='input-section__input-field'
-      />
+      <div className='input-section__radio-button'>
+        <label htmlFor='repayment' className='input-section__radio-label'>
+          Repayment
+        </label>
+        <input
+          type='radio'
+          name='mortgage-type'
+          value='repayment'
+          id='repayment'
+          className='input-section__input-field'
+        />
+      </div>
 
-      <input
-        type='radio'
-        name='mortgage-type'
-        value='Interest Only'
-        className='input-section__input-field'
-      />
+      <div className='input-section__radio-button'>
+        <label htmlFor='interest-only' className='input-section__radio-label'>
+          Interest Only
+        </label>
+        <input
+          type='radio'
+          name='mortgage-type'
+          value='interest-only'
+          id='interest-only'
+          className='input-section__input-field'
+        />
+      </div>
 
       <button className='calculate-button'>
         <img
