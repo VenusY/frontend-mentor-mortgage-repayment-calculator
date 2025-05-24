@@ -1,4 +1,3 @@
-import InputFieldContainer from './InputFieldContainer';
 import RadioButton from './RadioButton';
 import MortgageAmount from './MortgageAmount';
 import MortgageTermAndInterestRate from './MortgageTermAndInterestRate';
@@ -7,7 +6,6 @@ export default function Form() {
   return (
     <form className='form'>
       <MortgageAmount />
-
       <MortgageTermAndInterestRate />
 
       <label htmlFor='mortgage-type' className='input-section__label'>
