@@ -1,31 +1,14 @@
 import InputFieldContainer from './InputFieldContainer';
 import RadioButton from './RadioButton';
 import MortgageAmount from './MortgageAmount';
+import MortgageTermAndInterestRate from './MortgageTermAndInterestRate';
 
 export default function Form() {
   return (
     <form className='form'>
       <MortgageAmount />
 
-      <div>
-        <div className='input-section__label-input-container'>
-          <label htmlFor='mortgage-term' className='input-section__label'>
-            Mortgage Term
-          </label>
-          <InputFieldContainer
-            unit='years'
-            id='mortgage-term'
-            reversed={false}
-          />
-        </div>
-
-        <div className='input-section__label-input-container'>
-          <label htmlFor='interest-rate' className='input-section__label'>
-            Interest Rate
-          </label>
-          <InputFieldContainer unit='%' id='interest-rate' reversed={false} />
-        </div>
-      </div>
+      <MortgageTermAndInterestRate />
 
       <label htmlFor='mortgage-type' className='input-section__label'>
         Mortgage Type
