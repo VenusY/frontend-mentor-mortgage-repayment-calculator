@@ -1,4 +1,5 @@
 import InputFieldContainer from './InputFieldContainer';
+import RadioButton from './RadioButton';
 
 export default function InputSection() {
   return (
@@ -40,31 +41,8 @@ export default function InputSection() {
         Mortgage Type
       </label>
 
-      <div className='input-section__radio-button'>
-        <label htmlFor='repayment' className='input-section__radio-label'>
-          Repayment
-        </label>
-        <input
-          type='radio'
-          name='mortgage-type'
-          value='repayment'
-          id='repayment'
-          className='input-section__input-field'
-        />
-      </div>
-
-      <div className='input-section__radio-button'>
-        <label htmlFor='interest-only' className='input-section__radio-label'>
-          Interest Only
-        </label>
-        <input
-          type='radio'
-          name='mortgage-type'
-          value='interest-only'
-          id='interest-only'
-          className='input-section__input-field'
-        />
-      </div>
+      <RadioButton label='Repayment' value='repayment' />
+      <RadioButton label='Interest Only' value='interest-only' />
 
       <button className='calculate-button'>
         <img
