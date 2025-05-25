@@ -12,7 +12,7 @@ export default function App() {
   const [mortgageType, setMortgageType] = useState(null);
   const [monthlyRepayments, setMonthlyRepayments] = useState(null);
   const [total, setTotal] = useState(null);
-  const [displayResults, setDisplysResults] = useState(false);
+  const [displayResults, setDisplayResults] = useState(false);
 
   function updateMortgageAmount(e) {
     setMortgageAmount(e.currentTarget.value);
