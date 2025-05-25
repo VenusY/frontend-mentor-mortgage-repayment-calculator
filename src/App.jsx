@@ -1,7 +1,9 @@
 import './styles/reset.css';
-import { useState } from 'react';
+import { createContext, useState } from 'react';
 import InputSection from './components/InputSection';
 import ResultsSection from './components/ResultsSection';
+
+const CalculatorContext = createContext(null);
 
 export default function App() {
   const [mortgageAmount, setMortgageAmount] = useState(null);
@@ -25,9 +27,28 @@ export default function App() {
   }
 
   return (
-    <div className='calculator'>
-      <InputSection />
-      <ResultsSection displayResults={displayResults} />
-    </div>
+    <CalculatorContext.Provider
+      value={{
+        mortgageAmount,
+        setMortgageAmount,
+        mortgageTerm,
+        setMortgageTerm,
+        interestRate,
+        setInterestRate,
+        mortgageType,
+        setMortgageType,
+        monthlyRepayments,
+        setMonthlyRepayments,
+        total,
+        setTotal,
+        displayResults,
+        setDisplayResults,
+      }}
+    >
+      <div className='calculator'>
+        <InputSection />
+        <ResultsSection displayResults={displayResults} />
+      </div>
+    </CalculatorContext.Provider>
   );
 }
