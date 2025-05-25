@@ -12,18 +12,6 @@ export default function App() {
   const [mortgageType, setMortgageType] = useState(null);
   const [displayResults, setDisplayResults] = useState(false);
 
-  function updateMortgageAmount(e) {
-    setMortgageAmount(e.currentTarget.value);
-  }
-
-  function updateMortgageTerm(e) {
-    setMortgageTerm(e.currentTarget.value);
-  }
-
-  function updateInterestRate(e) {
-    setInterestRate(e.currentTarget.value);
-  }
-
   return (
     <CalculatorContext.Provider
       value={{
