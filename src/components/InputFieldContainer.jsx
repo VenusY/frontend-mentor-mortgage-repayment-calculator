@@ -1,4 +1,14 @@
-export default function InputFieldContainer({ unit, id, reversed }) {
+export default function InputFieldContainer({
+  unit,
+  id,
+  reversed,
+  value,
+  valueSetFunction,
+}) {
+  function updateValue(e) {
+    valueSetFunction(e.currentTarget.value);
+  }
+
   return (
     <div
       className={`input-field-container ${
@@ -7,6 +17,8 @@ export default function InputFieldContainer({ unit, id, reversed }) {
     >
       <input
         type='text'
+        value={value}
+        onChange={updateValue}
         id={id}
         className='input-field-container__input-field'
       />

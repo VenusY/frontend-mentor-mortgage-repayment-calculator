@@ -3,7 +3,7 @@ import { createContext, useState } from 'react';
 import InputSection from './components/InputSection';
 import ResultsSection from './components/ResultsSection';
 
-const CalculatorContext = createContext(null);
+export const CalculatorContext = createContext(null);
 
 export default function App() {
   const [mortgageAmount, setMortgageAmount] = useState(null);
