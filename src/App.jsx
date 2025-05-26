@@ -6,9 +6,9 @@ import ResultsSection from './components/ResultsSection';
 export const CalculatorContext = createContext(null);
 
 export default function App() {
-  const [mortgageAmount, setMortgageAmount] = useState(null);
-  const [mortgageTerm, setMortgageTerm] = useState(null);
-  const [interestRate, setInterestRate] = useState(null);
+  const [mortgageAmount, setMortgageAmount] = useState('');
+  const [mortgageTerm, setMortgageTerm] = useState('');
+  const [interestRate, setInterestRate] = useState('');
   const [mortgageType, setMortgageType] = useState(null);
   const [displayResults, setDisplayResults] = useState(false);
 
