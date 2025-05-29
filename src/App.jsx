@@ -1,4 +1,5 @@
 import './styles/reset.css';
+import './styles/scss/App.scss';
 import { createContext, useState } from 'react';
 import InputSection from './components/InputSection';
 import ResultsSection from './components/ResultsSection';
