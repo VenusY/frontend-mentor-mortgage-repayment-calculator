@@ -1,3 +1,4 @@
+import '../styles/scss/InputSection.scss';
 import Header from './Header';
 import Form from './Form';
 
