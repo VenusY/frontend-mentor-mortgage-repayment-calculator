@@ -2,6 +2,7 @@
 
 .input-section {
   &__heading {
+    margin-bottom: u.rem(6);
     font-size: u.rem(24);
     font-weight: var(--fw-bold);
     line-height: 1.4;
@@ -10,6 +11,7 @@
 
   &__clear-button {
     padding: 0;
+    margin-bottom: u.rem(25);
     background: none;
     border: none;
     font-size: u.rem(16);
