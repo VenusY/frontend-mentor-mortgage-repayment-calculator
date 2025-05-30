@@ -5,7 +5,6 @@
 
 :root {
   --white: #fff;
-  --light-blue: #e3f4fc;
   --red: #d73328;
   --lime: #d7da2f;
   --slate-100: #e3f3fd;
@@ -28,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: var(--light-blue);
+  background: var(--slate-100);
   font-family: var(--ff-main);
   font-weight: var(--fw-normal);
 }
