@@ -1,3 +1,4 @@
+import '../styles/scss/Form.scss';
 import MortgageAmount from './MortgageAmount';
 import MortgageTermAndInterestRate from './MortgageTermAndInterestRate';
 import MortgageType from './MortgageType';

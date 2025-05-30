@@ -1,0 +1,9 @@
+@use './util' as u;
+
+.form {
+  &__label {
+    display: block;
+    margin-bottom: u.rem(7);
+    color: var(--slate-700);
+  }
+}
