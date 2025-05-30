@@ -3,7 +3,7 @@ import RadioButton from './RadioButton';
 export default function MortgageType() {
   return (
     <>
-      <label htmlFor='mortgage-type' className='input-section__label'>
+      <label htmlFor='mortgage-type' className='form__label'>
         Mortgage Type
       </label>
       <RadioButton label='Repayment' value='repayment' />

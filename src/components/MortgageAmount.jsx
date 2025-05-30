@@ -7,7 +7,7 @@ export default function MortgageAmount() {
 
   return (
     <>
-      <label htmlFor='mortgage-amount' className='input-section__label'>
+      <label htmlFor='mortgage-amount' className='form__label'>
         Mortgage Amount
       </label>
       <InputFieldContainer
