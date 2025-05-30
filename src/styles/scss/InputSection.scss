@@ -7,4 +7,15 @@
     line-height: 1.4;
     color: var(--slate-900);
   }
+
+  &__clear-button {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: u.rem(16);
+    font-weight: var(--fw-normal);
+    text-decoration: underline;
+    text-underline-offset: u.rem(3);
+    color: var(--slate-700);
+  }
 }
