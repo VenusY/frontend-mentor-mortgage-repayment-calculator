@@ -9,8 +9,8 @@ export default function RadioButton({ label, value }) {
   }
 
   return (
-    <div className='input-section__radio-button'>
-      <label htmlFor={value} className='input-section__radio-label'>
+    <div className='radio-button__container'>
+      <label htmlFor={value} className='radio-button__label'>
         {label}
       </label>
       <input
@@ -19,7 +19,7 @@ export default function RadioButton({ label, value }) {
         value={value}
         onChange={updateMortgageType}
         id={value}
-        className='input-section__input-field'
+        className='radio-button'
       />
     </div>
   );
