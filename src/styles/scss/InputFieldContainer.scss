@@ -1,0 +1,40 @@
+@use './util' as u;
+
+.input-field-container {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid var(--dark-grey);
+  border-radius: 5px;
+
+  &--reversed {
+    flex-direction: row-reverse;
+  }
+
+  &__input-field {
+    width: 100%;
+    padding: 12.5px 16px;
+    border: none;
+    font-family: var(--ff-main);
+    font-size: u.rem(18);
+    font-weight: var(--fw-bold);
+    color: var(--slate-900);
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
+  &__unit {
+    padding-inline: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--slate-100);
+    font-size: u.rem(18);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    color: var(--slate-700);
+  }
+}

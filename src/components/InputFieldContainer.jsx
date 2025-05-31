@@ -1,3 +1,5 @@
+import '../styles/scss/InputFieldContainer.scss';
+
 export default function InputFieldContainer({
   unit,
   id,
@@ -22,7 +24,7 @@ export default function InputFieldContainer({
         id={id}
         className='input-field-container__input-field'
       />
-      <p className='input-field-container__units-container'>{unit}</p>
+      <p className='input-field-container__unit'>{unit}</p>
     </div>
   );
 }
