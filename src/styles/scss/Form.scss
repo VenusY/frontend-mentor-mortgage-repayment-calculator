@@ -1,6 +1,19 @@
 @use './util' as u;
 
 .form {
+  &__container,
+  &__inner-container {
+    &:not(:last-child) {
+      margin-bottom: u.rem(27);
+    }
+  }
+
+  &__container {
+    &:last-child {
+      margin-bottom: u.rem(23);
+    }
+  }
+
   &__label {
     display: block;
     margin-bottom: u.rem(7);
