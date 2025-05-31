@@ -1,3 +1,5 @@
+import '../styles/scss/CalculateButton.scss';
+
 export default function CalculateButton() {
   return (
     <button type='button' className='calculate-button'>

@@ -1,0 +1,25 @@
+@use './util' as u;
+
+.calculate-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px;
+  background: var(--lime);
+  border: none;
+  border-radius: 1000px;
+
+  &__icon {
+    height: 24px;
+    width: auto;
+  }
+
+  &__text {
+    font-size: u.rem(18);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    color: var(--slate-900);
+  }
+}
