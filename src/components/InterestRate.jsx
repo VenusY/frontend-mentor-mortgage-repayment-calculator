@@ -6,7 +6,7 @@ export default function InterestRate() {
   const { interestRate, setInterestRate } = useContext(CalculatorContext);
 
   return (
-    <div className='form__container'>
+    <div className='form__inner-container'>
       <label htmlFor='interest-rate' className='form__label'>
         Interest Rate
       </label>

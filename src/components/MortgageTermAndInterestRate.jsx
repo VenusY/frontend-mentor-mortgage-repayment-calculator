@@ -3,7 +3,7 @@ import InterestRate from './InterestRate';
 
 export default function MortgageTermAndInterestRate() {
   return (
-    <div>
+    <div className='form__container'>
       <MortgageTerm />
       <InterestRate />
     </div>

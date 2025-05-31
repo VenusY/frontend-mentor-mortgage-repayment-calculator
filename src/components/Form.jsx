@@ -7,9 +7,12 @@ import CalculateButton from './CalculateButton';
 export default function Form() {
   return (
     <form className='form'>
-      <MortgageAmount />
-      <MortgageTermAndInterestRate />
-      <MortgageType />
+      <div className='form__input-fields'>
+        <MortgageAmount />
+        <MortgageTermAndInterestRate />
+        <MortgageType />
+      </div>
+
       <CalculateButton />
     </form>
   );

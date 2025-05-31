@@ -6,7 +6,7 @@ export default function MortgageTerm() {
   const { mortgageTerm, setMortgageTerm } = useContext(CalculatorContext);
 
   return (
-    <div className='form__container'>
+    <div className='form__inner-container'>
       <label htmlFor='mortgage-term' className='form__label'>
         Mortgage Term
       </label>
