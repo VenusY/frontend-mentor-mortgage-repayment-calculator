@@ -1,0 +1,29 @@
+@use './util' as u;
+
+.radio-button {
+  &__container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 14px 18px;
+    border: 1px solid var(--dark-grey);
+    border-radius: 5px;
+
+    &:not(:last-child) {
+      margin-bottom: u.rem(10);
+    }
+
+    & > * {
+      cursor: pointer;
+    }
+  }
+
+  &__label {
+    width: 100%;
+    font-size: u.rem(18);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    color: var(--slate-900);
+  }
+}
