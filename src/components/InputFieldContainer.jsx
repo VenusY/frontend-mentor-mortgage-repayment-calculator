@@ -15,7 +15,7 @@ export default function InputFieldContainer({
     <div
       className={`input-field-container ${
         reversed ? 'input-field-container--reversed' : ''
-      }`}
+      } ${value ? 'input-field-container--active' : ''}`}
     >
       <input
         type='text'
@@ -24,7 +24,13 @@ export default function InputFieldContainer({
         id={id}
         className='input-field-container__input-field'
       />
-      <p className='input-field-container__unit'>{unit}</p>
+      <p
+        className={`input-field-container__unit ${
+          value ? 'input-field-container__unit--active' : ''
+        }`}
+      >
+        {unit}
+      </p>
     </div>
   );
 }
