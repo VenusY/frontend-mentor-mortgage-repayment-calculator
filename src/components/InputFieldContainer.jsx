@@ -19,6 +19,7 @@ export default function InputFieldContainer({
     >
       <input
         type='text'
+        inputMode='decimal'
         value={value}
         onChange={updateValue}
         id={id}
