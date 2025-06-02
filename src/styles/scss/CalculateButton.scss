@@ -10,6 +10,12 @@
   background: var(--lime);
   border: none;
   border-radius: 1000px;
+  transition: background 100ms ease-in;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--light-lime);
+  }
 
   &__icon {
     height: 24px;
