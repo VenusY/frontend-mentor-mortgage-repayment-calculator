@@ -23,6 +23,7 @@ export default function RadioButton({ label, value, checked }) {
         name='mortgage-type'
         value={value}
         onChange={updateMortgageType}
+        checked={checked}
         id={value}
         className='radio-button'
       />
