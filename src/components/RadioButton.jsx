@@ -2,7 +2,7 @@ import '../styles/scss/RadioButton.scss';
 import { useContext } from 'react';
 import { CalculatorContext } from '../App';
 
-export default function RadioButton({ label, value }) {
+export default function RadioButton({ label, value, checked }) {
   const { setMortgageType } = useContext(CalculatorContext);
 
   function updateMortgageType() {
@@ -10,7 +10,11 @@ export default function RadioButton({ label, value }) {
   }
 
   return (
-    <label className='radio-button__container'>
+    <label
+      className={`radio-button__container ${
+        checked ? 'radio-button__container--checked' : ''
+      }`}
+    >
       <span htmlFor={value} className='radio-button__label'>
         {label}
       </span>
