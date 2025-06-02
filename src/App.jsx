@@ -10,7 +10,7 @@ export default function App() {
   const [mortgageAmount, setMortgageAmount] = useState('');
   const [mortgageTerm, setMortgageTerm] = useState('');
   const [interestRate, setInterestRate] = useState('');
-  const [mortgageType, setMortgageType] = useState(null);
+  const [mortgageType, setMortgageType] = useState('');
   const [displayResults, setDisplayResults] = useState(false);
 
   return (
