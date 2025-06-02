@@ -7,14 +7,14 @@
   gap: 12px;
   width: 100%;
   padding: 16px;
-  background: var(--lime);
+  background: var(--lime-500);
   border: none;
   border-radius: 1000px;
   transition: background 100ms ease-in;
 
   &:hover,
   &:focus-visible {
-    background: var(--light-lime);
+    background: var(--lime-300);
   }
 
   &__icon {
