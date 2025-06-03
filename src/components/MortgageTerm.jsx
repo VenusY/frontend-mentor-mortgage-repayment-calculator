@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CalculatorContext } from '../App';
 import InputFieldContainer from './InputFieldContainer';
+import ErrorMessage from './ErrorMessage';
 
 export default function MortgageTerm() {
   const { mortgageTerm, setMortgageTerm } = useContext(CalculatorContext);
@@ -17,6 +18,7 @@ export default function MortgageTerm() {
         value={mortgageTerm}
         valueSetFunction={setMortgageTerm}
       />
+      <ErrorMessage />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CalculatorContext } from '../App';
 import InputFieldContainer from './InputFieldContainer';
+import ErrorMessage from './ErrorMessage';
 
 export default function InterestRate() {
   const { interestRate, setInterestRate } = useContext(CalculatorContext);
@@ -17,6 +18,7 @@ export default function InterestRate() {
         value={interestRate}
         valueSetFunction={setInterestRate}
       />
+      <ErrorMessage />
     </div>
   );
 }

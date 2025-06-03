@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CalculatorContext } from '../App';
 import RadioButton from './RadioButton';
+import ErrorMessage from './ErrorMessage';
 
 export default function MortgageType() {
   const { mortgageType } = useContext(CalculatorContext);
@@ -11,17 +12,21 @@ export default function MortgageType() {
         Mortgage Type
       </label>
 
-      <RadioButton
-        label='Repayment'
-        value='repayment'
-        checked={mortgageType === 'repayment' ? true : false}
-      />
+      <div>
+        <RadioButton
+          label='Repayment'
+          value='repayment'
+          checked={mortgageType === 'repayment' ? true : false}
+        />
 
-      <RadioButton
-        label='Interest Only'
-        value='interest-only'
-        checked={mortgageType === 'interest-only' ? true : false}
-      />
+        <RadioButton
+          label='Interest Only'
+          value='interest-only'
+          checked={mortgageType === 'interest-only' ? true : false}
+        />
+      </div>
+
+      <ErrorMessage />
     </div>
   );
 }
