@@ -22,6 +22,10 @@
     border: 1px solid var(--lime-500);
   }
 
+  &--error {
+    border: 1px solid var(--red);
+  }
+
   &__input-field {
     width: 100%;
     padding: 12.5px 16px;
@@ -53,6 +57,11 @@
     &--active {
       background: var(--lime-500);
       color: var(--slate-900);
+    }
+
+    &--error {
+      background: var(--red);
+      color: var(--white);
     }
   }
 }
