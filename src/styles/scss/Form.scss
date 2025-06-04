@@ -16,7 +16,18 @@
 
   &__label {
     display: block;
-    margin-bottom: u.rem(7);
+    margin-bottom: 7px;
     color: var(--slate-700);
+  }
+
+  &__error-message {
+    display: none;
+    margin-top: 10px;
+    font-size: u.rem(14);
+    color: var(--red);
+
+    &--visible {
+      display: block;
+    }
   }
 }
