@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 32px 24px;
   background: var(--slate-900);
   text-align: center;
+
+  &__hero-image {
+    width: 58.7%;
+  }
 }
