@@ -1,6 +1,8 @@
 @use './util' as u;
 
 .input-section {
+  padding: 32px 24px;
+
   &__heading {
     margin-bottom: u.rem(6);
     font-size: u.rem(24);
