@@ -1,3 +1,4 @@
+import '../styles/scss/ResultsScreen.scss';
 import ResultContainer from './ResultContainer';
 
 export default function ResultsScreen({ monthlyRepayments, total }) {
