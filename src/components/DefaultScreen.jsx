@@ -1,3 +1,5 @@
+import '../styles/scss/DefaultScreen.scss';
+
 export default function DefaultScreen() {
   return (
     <section className='default-screen'>
