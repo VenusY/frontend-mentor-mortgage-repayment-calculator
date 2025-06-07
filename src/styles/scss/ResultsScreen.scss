@@ -5,12 +5,14 @@
   background: var(--slate-900);
 
   &__heading {
+    margin-bottom: u.rem(14);
     font-size: u.rem(24);
     font-weight: var(--fw-bold);
     color: var(--white);
   }
 
   &__description {
+    margin-bottom: 28px;
     color: var(--slate-300);
   }
 }
