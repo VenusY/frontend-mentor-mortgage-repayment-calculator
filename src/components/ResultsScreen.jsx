@@ -1,3 +1,5 @@
+import ResultContainer from './ResultContainer';
+
 export default function ResultsScreen({ monthlyRepayments, total }) {
   return (
     <section className='results-screen'>
