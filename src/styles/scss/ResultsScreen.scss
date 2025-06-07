@@ -1,4 +1,12 @@
+@use './util' as u;
+
 .results-screen {
   padding: 32px 24px;
   background: var(--slate-900);
+
+  &__heading {
+    font-size: u.rem(24);
+    font-weight: var(--fw-bold);
+    color: var(--white);
+  }
 }
