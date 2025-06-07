@@ -15,4 +15,11 @@
     margin-bottom: 28px;
     color: var(--slate-300);
   }
+
+  &__main-section {
+    padding: 22px 15px;
+    background: var(--slate-1100);
+    border-radius: 6px;
+    box-shadow: 0 -4px 0 var(--lime-500);
+  }
 }
