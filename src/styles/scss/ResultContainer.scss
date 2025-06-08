@@ -1,5 +1,31 @@
+@use './util' as u;
+
 .result-container {
   &__heading {
+    margin-bottom: u.rem(10);
     color: var(--slate-300);
+  }
+}
+
+.monthly-repayments {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #314754;
+
+  &__result {
+    font-size: u.rem(40);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    color: var(--lime-500);
+  }
+}
+
+.total {
+  padding-block: 17px 5px;
+
+  &__result {
+    font-size: u.rem(24);
+    font-weight: var(--fw-bold);
+    line-height: 1;
+    color: var(--white);
   }
 }
