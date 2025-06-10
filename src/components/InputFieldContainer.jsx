@@ -6,6 +6,7 @@ export default function InputFieldContainer({
   reversed,
   value,
   valueSetFunction,
+  valid,
 }) {
   function updateValue(e) {
     valueSetFunction(e.currentTarget.value);
@@ -15,7 +16,9 @@ export default function InputFieldContainer({
     <div
       className={`input-field-container ${
         reversed ? 'input-field-container--reversed' : ''
-      } ${value ? 'input-field-container--active' : ''}`}
+      } ${value ? 'input-field-container--active' : ''} ${
+        valid ? '' : 'input-field-container--error'
+      }`}
     >
       <input
         type='text'
@@ -28,7 +31,7 @@ export default function InputFieldContainer({
       <p
         className={`input-field-container__unit ${
           value ? 'input-field-container__unit--active' : ''
-        }`}
+        } ${valid ? '' : 'input-field-container__unit--error'}`}
       >
         {unit}
       </p>

@@ -4,7 +4,7 @@ import RadioButton from './RadioButton';
 import ErrorMessage from './ErrorMessage';
 
 export default function MortgageType() {
-  const { mortgageType } = useContext(CalculatorContext);
+  const { mortgageType, valid } = useContext(CalculatorContext);
 
   return (
     <div className='form__container'>
@@ -26,7 +26,7 @@ export default function MortgageType() {
         />
       </div>
 
-      <ErrorMessage />
+      <ErrorMessage display={!valid.mortgageType} />
     </div>
   );
 }
