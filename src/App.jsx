@@ -17,6 +17,12 @@ export default function App() {
     interestRate: true,
     mortgageType: true,
   });
+  const [displayError, setDisplayError] = useState({
+    mortgageAmount: false,
+    mortgageTerm: false,
+    interestRate: false,
+    mortgageType: false,
+  });
   const [displayResults, setDisplayResults] = useState(false);
 
   return (
@@ -32,6 +38,8 @@ export default function App() {
         setMortgageType,
         valid,
         setValid,
+        displayError,
+        setDisplayError,
         displayResults,
         setDisplayResults,
       }}
