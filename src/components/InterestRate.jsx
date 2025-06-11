@@ -4,7 +4,7 @@ import InputFieldContainer from './InputFieldContainer';
 import ErrorMessage from './ErrorMessage';
 
 export default function InterestRate() {
-  const { interestRate, setInterestRate, valid } =
+  const { interestRate, setInterestRate, valid, displayError } =
     useContext(CalculatorContext);
 
   return (
@@ -22,7 +22,7 @@ export default function InterestRate() {
         valid={valid.interestRate}
       />
 
-      <ErrorMessage display={!interestRate && !valid.interestRate} />
+      <ErrorMessage display={displayError.interestRate} />
     </div>
   );
 }

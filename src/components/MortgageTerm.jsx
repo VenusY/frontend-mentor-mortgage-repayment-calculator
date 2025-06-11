@@ -4,7 +4,7 @@ import InputFieldContainer from './InputFieldContainer';
 import ErrorMessage from './ErrorMessage';
 
 export default function MortgageTerm() {
-  const { mortgageTerm, setMortgageTerm, valid } =
+  const { mortgageTerm, setMortgageTerm, valid, displayError } =
     useContext(CalculatorContext);
 
   return (
@@ -22,7 +22,7 @@ export default function MortgageTerm() {
         valid={valid.mortgageTerm}
       />
 
-      <ErrorMessage display={!mortgageTerm && !valid.mortgageTerm} />
+      <ErrorMessage display={displayError.mortgageTerm} />
     </div>
   );
 }

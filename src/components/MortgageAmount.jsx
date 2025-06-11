@@ -4,7 +4,7 @@ import InputFieldContainer from './InputFieldContainer';
 import ErrorMessage from './ErrorMessage';
 
 export default function MortgageAmount() {
-  const { mortgageAmount, setMortgageAmount, valid } =
+  const { mortgageAmount, setMortgageAmount, valid, displayError } =
     useContext(CalculatorContext);
 
   return (
@@ -22,7 +22,7 @@ export default function MortgageAmount() {
         valid={valid.mortgageAmount}
       />
 
-      <ErrorMessage display={!mortgageAmount && !valid.mortgageAmount} />
+      <ErrorMessage display={displayError.mortgageAmount} />
     </div>
   );
 }
