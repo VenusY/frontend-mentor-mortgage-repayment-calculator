@@ -2,7 +2,7 @@ import '../styles/scss/CalculateButton.scss';
 
 export default function CalculateButton() {
   return (
-    <button type='button' className='calculate-button'>
+    <button type='submit' className='calculate-button'>
       <img
         src={require('../assets/images/icon-calculator.svg')}
         alt='Calculator'
