@@ -34,17 +34,31 @@ export default function Form() {
       interestRate: !interestRate ? true : false,
       mortgageType: !mortgageType ? true : false,
     });
+
+    if (
+      mortgageAmount.match(amountRegex) &&
+      mortgageTerm.match(termRegex) &&
+      interestRate.match(interestRateRegex) &&
+      mortgageType
+    ) {
+      return true;
+    }
+
+    return false;
   }
 
-  function calculate() {}
+  function calculateRepayment() {}
 
   return (
     <form
       className='form'
       onSubmit={(e) => {
         e.preventDefault();
-        validateInputs();
-        calculate();
+        const isValid = validateInputs();
+
+        if (isValid) {
+          calculateRepayment();
+        }
       }}
     >
       <div className='form__input-fields'>
