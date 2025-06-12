@@ -24,6 +24,10 @@ export default function App() {
     mortgageType: false,
   });
   const [displayResults, setDisplayResults] = useState(false);
+  const [results, setResults] = useState({
+    monthlyRepayments: 0,
+    total: 0,
+  });
 
   return (
     <CalculatorContext.Provider
@@ -42,6 +46,8 @@ export default function App() {
         setDisplayError,
         displayResults,
         setDisplayResults,
+        results,
+        setResults,
       }}
     >
       <div className='calculator'>

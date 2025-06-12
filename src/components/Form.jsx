@@ -14,6 +14,8 @@ export default function Form() {
     mortgageType,
     setValid,
     setDisplayError,
+    setDisplayResults,
+    setResults,
   } = useContext(CalculatorContext);
 
   function validateInputs() {
@@ -44,10 +46,30 @@ export default function Form() {
       return true;
     }
 
+    setDisplayResults(false);
     return false;
   }
 
-  function calculateRepayment() {}
+  function calculateRepayment() {
+    const monthlyInterestRate = interestRate / 100 / 12;
+    const termMonths = mortgageTerm * 12;
+
+    const monthlyRepayments = (
+      (mortgageAmount *
+        monthlyInterestRate *
+        (1 + monthlyInterestRate) ** termMonths) /
+      ((1 + monthlyInterestRate) ** termMonths - 1)
+    ).toFixed(2);
+
+    const total = monthlyRepayments * termMonths;
+
+    setResults({
+      monthlyRepayments: monthlyRepayments,
+      total: total,
+    });
+
+    setDisplayResults(true);
+  }
 
   return (
     <form

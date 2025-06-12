@@ -1,7 +1,11 @@
 import '../styles/scss/ResultsScreen.scss';
 import ResultContainer from './ResultContainer';
+import { useContext } from 'react';
+import { CalculatorContext } from '../App';
 
-export default function ResultsScreen({ monthlyRepayments, total }) {
+export default function ResultsScreen() {
+  const { results } = useContext(CalculatorContext);
+
   return (
     <section className='results-screen'>
       <header className='results-screen__header'>
@@ -17,13 +21,13 @@ export default function ResultsScreen({ monthlyRepayments, total }) {
         <ResultContainer
           category='monthly-repayments'
           heading='Your monthly repayments'
-          result={monthlyRepayments}
+          result={results.monthlyRepayments}
         />
 
         <ResultContainer
           category='total'
           heading={`Total you'll repay over the term`}
-          result={total}
+          result={results.total}
         />
       </main>
     </section>
