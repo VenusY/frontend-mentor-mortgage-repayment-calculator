@@ -7,6 +7,8 @@ export default function Header() {
     setMortgageTerm,
     setInterestRate,
     setMortgageType,
+    setResults,
+    setDisplayResults,
   } = useContext(CalculatorContext);
 
   function clearInputs() {
@@ -14,6 +16,11 @@ export default function Header() {
     setMortgageTerm('');
     setInterestRate('');
     setMortgageType('');
+    setResults({
+      monthlyRepayments: 0,
+      total: 0,
+    });
+    setDisplayResults(false);
   }
 
   return (
