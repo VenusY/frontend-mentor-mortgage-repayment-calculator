@@ -61,12 +61,21 @@ export default function Form() {
       ((1 + monthlyInterestRate) ** termMonths - 1)
     ).toFixed(2);
 
-    const total = monthlyRepayments * termMonths;
+    const total = (monthlyRepayments * termMonths).toFixed(2);
+    const totalInterest = (total - mortgageAmount).toFixed(2);
+    const monthlyInterest = (totalInterest / termMonths).toFixed(2);
 
-    setResults({
-      monthlyRepayments: monthlyRepayments,
-      total: total,
-    });
+    if (mortgageType === 'repayment') {
+      setResults({
+        monthlyRepayments: monthlyRepayments,
+        total: total,
+      });
+    } else {
+      setResults({
+        monthlyRepayments: monthlyInterest,
+        total: totalInterest,
+      });
+    }
 
     setDisplayResults(true);
   }
