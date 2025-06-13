@@ -29,3 +29,28 @@
     color: var(--white);
   }
 }
+
+@media screen and (min-width: 1100px) {
+  .result-container {
+    &__heading {
+      margin-bottom: 0;
+    }
+  }
+
+  .monthly-repayments {
+    padding-bottom: 39px;
+
+    &__result {
+      margin-top: u.rem(14);
+      font-size: u.rem(56);
+    }
+  }
+
+  .total {
+    padding-block: 34px 5px;
+
+    &__result {
+      margin-top: u.rem(10);
+    }
+  }
+}
