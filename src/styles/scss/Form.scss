@@ -32,3 +32,39 @@
     }
   }
 }
+
+@media screen and (min-width: 1100px) {
+  .form {
+    &__label {
+      margin-bottom: 10px;
+    }
+
+    &__container,
+    &__inner-container {
+      &:not(:last-child) {
+        margin-bottom: u.rem(24);
+      }
+    }
+
+    &__container {
+      &:last-child {
+        margin-bottom: u.rem(39);
+      }
+    }
+
+    &__inner-container {
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .mortgage-and-interest {
+    display: flex;
+    gap: 22px;
+
+    & > * {
+      width: 50%;
+    }
+  }
+}

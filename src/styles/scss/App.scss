@@ -37,5 +37,15 @@ body {
 }
 
 .calculator {
+  max-width: 800px;
   background: var(--white);
+}
+
+@media screen and (min-width: 1100px) {
+  .calculator {
+    display: flex;
+    max-width: 1008px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
 }
